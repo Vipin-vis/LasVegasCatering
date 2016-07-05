@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Catering.com | Contact</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen">
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/cufon-replace.js" type="text/javascript"></script>
+<script src="js/Dynalight_400.font.js" type="text/javascript"></script>
+<script src="js/FF-cash.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<script src="AppContactModule.js"></script>
+<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+</head>
+<body id="page6" ng-app="MyContactApp" ng-controller="ContactController">
+<!--==============================header=================================-->
+<header>
+  <div class="row-top">
+    <div class="main">
+      <div class="wrapper">
+        <h1><a href="index.html">Catering<span> Service</span></a></h1>
+        <nav>
+          <ul class="menu">
+            
+            <li><a class="active" href="index.html">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Catalogue </a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">FAQ </a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!--
+            <li><a class="active" href="index.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="catalogue.html">Catalogue </a></li>
+            <li><a href="shipping.html">Shipping</a></li>
+            <li><a href="faq.html">FAQ </a></li>
+            <li><a href="contact.html">Contact</a></li>-->
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="row-bot">
+    <div class="row-bot-bg">
+      <div class="main">
+        <h2>Caption Caption <span>Caption Caption</span></h2>
+      </div>
+    </div>
+  </div>
+</header>
+<!--==============================content================================-->
+<section id="content">
+  <div class="main">
+    <div class="wrapper">
+      <article class="col-1">
+        <div class="indent-left">
+          <h3 class="p1">Our Contacts</h3>
+          <figure class="indent-bot">
+            <iframe width="240" height="180" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+          </figure>
+          <dl>
+            <dt class="p1">Vipin, Triv</dt>
+            <dd><span>Telephone:</span> +1 123 123 123</dd>
+            <dd><span>Fax:</span> +1 123 123 1236</dd>
+            <dd><span>Email:</span><a class="color-2" href="#">infocateringser@gmail.com</a></dd>
+          </dl>
+        </div>
+      </article>
+      <article class="col-2">
+        <h3 class="p1">Contact Us</h3>
+        <form id="contact-form">
+          <fieldset>
+            <label><span class="text-form" >Your Name:</span>
+              <input name="name" ng-model="customer_name" type="text" />
+            </label>
+            <label><span class="text-form" >Your Email:</span>
+              <input name="email" ng-model="customer_mail" type="text" />
+            </label>
+            <label><span class="text-form" >Your Contact Number:</span>
+              <input name="email" ng-model="customer_contact_number" style="-webkit-appearance: none; -webkit-outer-spin-button: none" type="number" />
+            </label>
+            <div class="wrapper">
+              <div class="text-form">Your Message:</div>
+              <div class="extra-wrap">
+                <textarea ng-model='mail_content'></textarea>
+                <div class="clear"></div>
+                <div class="buttons"> <button class="button-2" ng-click="Clear()">CLEAR</button><button class="button-2" ng-click="Send()">SEND</button> </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </article>
+    </div>
+  </div>
+</section>
+<!--==============================footer=================================-->
+<footer>
+  <div class="main">
+    <div class="aligncenter"> <span>Copyright &copy; <a href="#">Domain Name</a> All Rights Reserved</span> Design by <a target="_blank" href="#">VipinVis</a> </div>
+  </div>
+</footer>
+<script type="text/javascript">Cufon.now();
+
+</script>
+</body>
+</html>
